@@ -2,9 +2,9 @@
 
 The objective of this project is to use a dataset to build a hiring system that predicts “hire,” “rejected at interview,” or “rejected at pre-interview.”
 Deploying models that impact people requires careful ethical decision-making. One of the components of ethical AI is Systematicity
-This project addresses systematicity by using an ensemble model method.
+This project addresses systematicity by using an ensemble model method. 
 
-The project has the following functions:
+The main code file is TalentModel.ipynb. It has the following functions:
 1. clean_split_data(data_copy) This function takes the dataframe, cleans it, and splits it into two parts: one with 90% and one with 10% of the data. The 90% is used to create models, and the 10% is used to address systematicity. 
 
 2. train_ensembleModel(x_train_systemicity, x_test_systemicity, y_train_systemicity, y_test_systemicity, ensembleModel): This function performs phase 1 of prediction, training the ensemble model. It Trains and builds an ensemble model that contains a set of models (with similar accuracy). This function also stores the set of models in the ensembleModel folder to use at prediction time.
